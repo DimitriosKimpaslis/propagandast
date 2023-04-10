@@ -1,0 +1,69 @@
+.CardPage{
+    background-color: antiquewhite;
+    padding-left: 20px;
+    padding-right: 1px;
+}
+
+.CardPage h1{
+    padding-top: 20px;
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+.CardPage h5{
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.CardPage h4{
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.CardPage h4 a{
+    text-decoration: none;
+    color: red;
+}
+
+.CardPage h4 a:hover{
+    color: brown;
+}
+
+.CardPage h3{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.firstParagraph::first-letter{
+    initial-letter: 2;
+    margin-right: 4px ;
+}
+
+.paragraph{
+    font-size: 1.4rem;
+    
+}
+
+.subtitle{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.CardPageImage{
+    width: 400px;
+    float: right;
+    shape-outside: circle(50%);
+    position: relative;
+    margin-right:20px ;
+    margin-left: 10px;
+}
+
+.CardPageImage img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 50%;
+    
+}

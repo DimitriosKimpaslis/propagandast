@@ -1,0 +1,11 @@
+.searchDiv{
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.searchDiv input{
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 15px;
+}

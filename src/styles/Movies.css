@@ -1,0 +1,19 @@
+.flexSearchFilter{
+    display: flex;
+    justify-content: space-between;
+}
+
+#moviesH1{
+    font-size: 4vw;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    width: 95%;
+    border-bottom: 2px solid black;
+}
+
+.moviesDiv{
+    background-color: #FFFFF7;
+    width: 100%;
+}
+

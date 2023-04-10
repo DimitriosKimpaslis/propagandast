@@ -1,0 +1,27 @@
+.quoteDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #242323;
+    color: rgb(240, 235, 235);
+    padding: 0.7% 2% 2% 2%;
+}
+
+.quoteDiv h1{
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.quoteDiv p{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.quoteDiv h3{
+    font-style: italic;
+    color: brown;
+    font-size: 1.5rem;
+}

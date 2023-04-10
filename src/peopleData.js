@@ -1,0 +1,62 @@
+export const people = [
+    {
+        name:'Dimitrios',
+        surname: 'Kimpaslis',
+        title: 'FOUNDER / WEB ENGINEER',
+        description: 'Kimpaslis Dimitrios is a web developer, founder and project manager of Propagandast. As an HR expert and through his IT skills he made Propagandast possible. His motto:',
+        motto: '"One step at a time, but you better make that damn step every day."',
+        facebook: '',
+        instagram: '',
+        image: 'kimpa.jpg',
+        alt: 'kimpa',
+        id: 0
+    },
+    {
+        name:'Konstantinos',
+        surname: 'Mosxonis',
+        title: 'LEAD DESIGNER / ADVISOR',
+        description: 'Moschonis Konstantinos is the lead designer of the webpage of Propagandast. A creative mind at core, he always has an interesting way to see things. Through his experience in the marketing industry (Ted-ex creative team member) and his artistic approach he gave life to Propagandast. His motto:',
+        motto: '"If you like basketball diaries, we are arleady friends."',
+        facebook: 'https://www.facebook.com/konstantinos.moschonis',
+        instagram: 'https://www.instagram.com/kostas.mos/',
+        image: 'kostas.jpg',
+        alt: 'kimpa',
+        id: 1
+    },
+    {
+        name:'Anastasios',
+        surname: 'Sotiriadis',
+        title: 'LEAD REVIEWER / FRONT FACE',
+        description: 'Sotiriadis Anastasios is the lead reviewer of Propagandast and also the front face of it. The reason this site exists today is because of him, he is able to bring the best in others and through his unique personality an idea was created to build him a platform to portray his thoughts. A movie freak at heart, he watches and analyzes movies with his mom on a daily basis searching for as he said "the perfect film". His motto:',
+        motto: '"Birds can be scary dont underestimate them."',
+        facebook: 'https://www.facebook.com/anastasis.soti',
+        instagram: 'https://www.instagram.com/anastasis_soti/',
+        image: 'anast.jpg',
+        alt: 'kimpa',
+        id: 2
+    },
+    {
+        name:'Theodoros',
+        surname: 'Gkoutzouridis',
+        title: 'REVIEWER',
+        description: 'Gkoutzouridis Theodoros is a reviewer of Propagandast. He is the one to watch movies that noone else watches and thats why his input was so greatly needed in our team. His unique approach at movies that was influenced by his home back in Korea, was considered crazy at first but it turned out to be genius. He always watches around 2/4 - 3/4 of the movie leaving his imagination flow of what the director wanted to portray towards the end, letting his ideas burst into a thousands colors of geniunity of character. His motto:',
+        motto: 'I wanted to learn about my ADHD, but i couldn\'t wait for the pages to load.',
+        facebook: 'https://www.facebook.com/ThodorisGkoutzou',
+        instagram: 'https://www.instagram.com/gkouuuu/',
+        image: 'gkou.jpg',
+        alt: 'kimpa',
+        id: 3
+    },
+    {
+        name:'Axilleas',
+        surname: 'Ntinas',
+        title: 'MORAL ADVISOR',
+        description: 'Ntinas Axilleas is the moral advisor of Propagandast. Through his fiery personality, his kind heart and his knowledge of the dark past (history degree) he always strives to ensure that the team makes morally good decisions. He never allows any members of the team be subdued by the high ranks and he tries to have as he said "a clear idea of what is good". He is also a big fan of old dark films like "Come and see" making it clear why someone with such a repertoire is a proud member of our team. His motto:',
+        motto: 'Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.',
+        facebook: 'https://www.facebook.com/Achilleas.PaokHC',
+        instagram: 'https://www.instagram.com/_ntinas/',
+        image: 'axilleas.jpg',
+        alt: 'kimpa',
+        id: 4
+    },
+]

@@ -1,0 +1,9 @@
+.filterDiv{
+    margin-right: 80px;
+}
+
+.filterDiv select{
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 15px;
+}

@@ -1,0 +1,9 @@
+.peopleDiv{
+    width: 99%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}

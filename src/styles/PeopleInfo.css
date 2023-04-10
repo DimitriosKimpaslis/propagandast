@@ -1,0 +1,59 @@
+.personInfoDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.personInfoDivCenter{
+    width: 50%;
+    background-color: rgb(155, 91, 91);
+    padding: 10px 30px;
+}
+
+.personInfo h2{
+    font-size: 3rem;
+    color: #131212;
+}
+
+.personInfo h6{
+    font-size: 1.2rem;
+    color: rgb(223, 221, 221);
+    margin-bottom: 10px;
+}
+
+.personInfo p{
+    color: rgb(26, 24, 24);
+    font-size: 1.5rem;
+    font-weight: 450;
+    margin-bottom: 10px;
+}
+
+.personInfo h3{
+    font-style: italic;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.personInfoMedia{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.personInfoFacebook{
+    width: 4%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.personInfoFacebook img{
+    width: 100%;
+}
+
+.personInfoInstagram{
+    width: 4%;
+    cursor: pointer;
+}
+
+.personInfoInstagram img{
+    width: 100%;
+}

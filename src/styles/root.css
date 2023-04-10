@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.main{
+    background-color: #dacc0eb4 ;
+}
+
+html{
+    background-color: #FFFFF7 ;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.margin{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}

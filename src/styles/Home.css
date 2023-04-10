@@ -1,0 +1,12 @@
+.homeDivH1 h1{
+    font-size: 4rem;
+    padding-top: 40px;
+    padding-left: 20px;
+    width: 99%;
+    border-bottom: 2px solid black;
+}
+
+.homeDiv{
+    background-color: antiquewhite;
+    padding: 0 5% 3% 5%;
+}

@@ -1,0 +1,13 @@
+.footerDiv{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 0.4% 0;
+}
+
+.footerDiv p{
+    color: rgb(88, 87, 87);
+}

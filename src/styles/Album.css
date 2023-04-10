@@ -1,0 +1,11 @@
+.albumDiv{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-image: url('../content/images/kodak-film.png');
+    background-position: center;
+    background-size: contain;
+}

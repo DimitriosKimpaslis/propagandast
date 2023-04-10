@@ -1,0 +1,8 @@
+.cards{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    row-gap: 30px;
+    column-gap: 20px;
+    padding: 0 1%;
+}
