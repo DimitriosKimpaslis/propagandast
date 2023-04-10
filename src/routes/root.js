@@ -13,10 +13,10 @@ export default function Root() {
     useEffect(() => {
       if (document.readyState === "complete") {
         setLoadingHome(false)
-        alert('mobile')
+        
       } else {
         window.addEventListener('load', (event) => { setLoadingHome(false) });
-        alert('pc')
+        
       }
     },[])
     

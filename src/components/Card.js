@@ -10,16 +10,16 @@ const Card = (props) => {
     const ratingColor = () => {
         const ratingH1 = document.getElementById(card.title);
         if(Number(card.rating) >= 0 && Number(card.rating) < 5){
-            ratingH1.style.color = 'red';
+            ratingH1.style.color = '#F44949';
         }
         else if(Number(card.rating) >= 5 && Number(card.rating) <= 7){
-            ratingH1.style.color = 'yellow';
+            ratingH1.style.color = '#FF7A00';
         }
-        else if(Number(card.rating) >= 7 && Number(card.rating) < 9){
-            ratingH1.style.color = 'green';
+        else if(Number(card.rating) >= 7 && Number(card.rating) < 8){
+            ratingH1.style.color = '#FBE15A';
         }
         else{
-            ratingH1.style.color = 'blue';
+            ratingH1.style.color = '#48C53D';
         }
     };
 
@@ -28,6 +28,7 @@ const Card = (props) => {
         // eslint-disable-next-line
     },[])
 
+    
     let path = '';
     if(card.type === 'movie'){
         path = '/movies/' + card.id.toString();

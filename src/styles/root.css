@@ -7,11 +7,11 @@
 }
 
 .main{
-    background-color: #dacc0eb4 ;
+    background-color: #FFC93C ;
 }
 
 html{
-    background-color: #FFFFF7 ;
+    background-color: #FFC93C ;
     height: 100%;
 }
 
@@ -20,7 +20,7 @@ body{
 }
 
 .margin{
-    margin-top: 5%;
+    padding-top: 5%;
     margin-left: 15%;
     margin-right: 15%;
 }
