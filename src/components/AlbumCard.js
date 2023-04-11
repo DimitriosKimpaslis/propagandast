@@ -39,8 +39,8 @@ const AlbumCard = (props) => {
     const routeChange = () =>{ 
         setDisabled(true);
         const cd = document.getElementById(card.id);
-        cd.style.animation = 'slidein 2s';
-        setTimeout(() =>{navigate(path)}, 1000);
+        cd.style.animation = 'slidein 1s';
+        setTimeout(() =>{navigate(path)}, 500);
   }
 
   return (

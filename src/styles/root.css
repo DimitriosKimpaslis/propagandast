@@ -6,18 +6,19 @@
     
 }
 
-.main{
-    background-color: #FFC93C ;
-    height: 100vh;
-}
-
 html{
     background-color: #FFC93C ;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body{
     height: 100%;
+}
+
+.main{
+    background-color: #FFC93C ;
+    height: 100vh;
 }
 
 .margin{
