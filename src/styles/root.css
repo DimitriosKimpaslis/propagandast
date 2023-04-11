@@ -8,6 +8,7 @@
 
 .main{
     background-color: #FFC93C ;
+    height: 100vh;
 }
 
 html{
@@ -21,6 +22,12 @@ body{
 
 .margin{
     padding-top: 5%;
+    padding-bottom: 3%;
     margin-left: 15%;
     margin-right: 15%;
 }
+
+/* Change highlight color */
+::selection {
+    background: brown;
+  }

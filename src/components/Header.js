@@ -8,6 +8,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   const navigate = useNavigate();
 
+  //Logo on click goes to home page
   const goHomePage = () => {
     const path = '/'
     navigate(path);
@@ -19,15 +20,15 @@ const Header = () => {
         </div>
         <div className='nav'>
           <ul>
-              <li><NavLink to='/'>ΑΡΧΙΚΗ</NavLink></li>
               <li><NavLink to='movies'>ΤΑΙΝΙΕΣ</NavLink></li>
               <li><NavLink to='series'>ΣΕΙΡΕΣ</NavLink></li>
               <li><NavLink to='writers'>ΕΜΕΙΣ</NavLink></li>
           </ul>
-        </div>
-        <div className='userIcon'>
+          <div className='userIcon'>
             <img src={iconProfile} alt='icon profile' />
+          </div>
         </div>
+        
     </div>
   )
 }

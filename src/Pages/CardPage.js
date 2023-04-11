@@ -4,28 +4,31 @@ import { data } from '../data';
 import '../styles/CardPage.css'
 
 const CardPage = () => {
+    //take the url , save the id part, and then render the object with the corresponding id from the data set
     const paramsObj = useParams();
     const id = paramsObj.id;
     const cardData = data.find(card => {
         return card.id === Number(id)
     })
 
+    //Scroll to the top of the page and do the animation
     const cdIn = () => {
         window.scrollTo(0, 0)
         const cd = document.getElementById(cardData.id);
         cd.style.animation = 'slideinPage 2s'
     }
 
-    // Take a big string that specifies title/text with \n and creates different html elements (paragraphs and subparagraphs)
+    // Take a big string that specifies title/text with \n and creates different html elements (paragraphs and subtitles)
     const paragraphGenerator = (text) => {
-        let string = text
-        const tempArr =[]
+        let string = text;
+        const tempArr = [];
         let count = 1;
         while(string.includes('\n')){
             const breakIndex = string.indexOf('\n'); //finds index of \n
             const partText = string.slice(0 , breakIndex); //takes part of the text
             string = string.slice(breakIndex + 1 , string.length) //removes text taken out
             let temp
+            //create the corresponding element and put in an array
             if(count === 1){
                 temp = createElement('p',{className: 'paragraph firstParagraph'},partText)
                 tempArr.push(temp)
@@ -40,11 +43,13 @@ const CardPage = () => {
             }
             count = count + 1;
          }
+         // if any string is left that obviously hasnt created an element because when an element is created it is deleted from the main string , create one final paragraph(because it always ends with a paragraph)
+         if (string){
+            tempArr.push(createElement('p',{className: 'paragraph'},string))
+         }
          return tempArr
     }
     
-     
-
   return (
     <div className='CardPage' onLoad={cdIn}>
         <h1>{cardData.title}: "{cardData.reviewTitle}"</h1>

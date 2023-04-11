@@ -7,6 +7,7 @@
 }
 
 .homeDiv{
-    background-color: antiquewhite;
+    background-image: url('../content/general/3376820.jpg');
+    background-size: 55%;
     padding: 0 5% 3% 5%;
 }

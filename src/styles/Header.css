@@ -2,19 +2,20 @@
     top: 0;
     width: 100%;
     height: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
     padding: 0 30px;
     margin-bottom: 50px;
     position: fixed;
     z-index: 1;
-    background-color: #FFFFF7 ;
+    background-color: rgba(255, 255, 255 , 0.98);
+    
 }
 
 .logo{
-    width: 40%;
+    width: 15%;
     cursor: pointer;
 }
 
@@ -36,23 +37,33 @@
     display: inline;
 }
 
-.nav ul li:nth-child(1){
-    margin-right: 10px;
+.nav ul li:nth-child(3){
+    margin-left: 20px;
 }
 
 .nav ul li:nth-child(2){
-    margin-right: 10px;
+    margin-left: 20px;
 }
 
-.nav ul li:nth-child(3){
-    margin-right: 10px;
+.nav ul li:nth-child(1){
+    margin-left: 20px;
 }
+
+.userIcon{
+    margin-left: 60px
+}
+
+
 
 .nav a{
     text-decoration: none;
-    color: rgb(219, 200, 22);
-    font-size: 2rem;
+    color: #f8cd60;
+    font-size: 2.3rem;
     font-weight: 700;
+}
+
+.nav a:hover{
+    color: #cea233;
 }
 
 
