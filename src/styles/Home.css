@@ -11,3 +11,10 @@
     background-size: 55%;
     padding: 0 5% 3% 5%;
 }
+
+@media only screen and (max-width:1000px){
+    .homeDivH1 h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+}

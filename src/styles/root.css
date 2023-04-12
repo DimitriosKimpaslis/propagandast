@@ -36,6 +36,10 @@ body{
   @media only screen and (max-width: 768px) {
     html {
         font-size: 10px;
+    }
 
+    .margin{
+        margin-left: 3%;
+        margin-right: 3%;
     }
   }

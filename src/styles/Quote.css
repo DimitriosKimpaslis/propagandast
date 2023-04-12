@@ -30,4 +30,14 @@
     .quoteDiv{
         margin-top: 1vh;
     }
+
+    .quoteDiv p{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .quoteDiv h1{
+        margin-bottom: 20px;
+    }
 }

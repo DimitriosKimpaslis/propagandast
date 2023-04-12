@@ -150,6 +150,33 @@
     #mobileUlDiv{
         width: 150px;
     } 
+
+    .logo{
+        width: 35vw;
+    }
+
+    .dropdownImg{
+        width: 15%;
+    }
+
+    .signIn{
+        font-size: 2rem;
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .logo{
+        width: 65vw;
+    }
+
+    .dropdownImg{
+        width: 20%;
+    }
+
+    .signIn{
+        font-size: 1.5rem;
+    }
 }
 
 

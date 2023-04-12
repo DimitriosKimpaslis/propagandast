@@ -80,3 +80,17 @@
 .dynamicImg{
     width: 80%;
 }
+
+@media only screen and (max-width: 1000px) {
+    .CardPageImage{
+        width: 50%;
+    }
+    
+    .CardPageImage img{
+        height: auto; 
+    }
+
+    .CardPage{
+        padding: 0 10% 1% 10%;
+    }
+  }

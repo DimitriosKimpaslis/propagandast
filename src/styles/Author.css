@@ -8,7 +8,7 @@
 
 .authorImgDiv{
     width: 8%;
-    margin-right: 1vw;
+    margin-right: 2vw;
 }
 
 .authorImgDiv img{
@@ -17,7 +17,7 @@
 }
 
 .authorText{
-    width: 30%;
+    width: 60%;
 }
 
 .authorText h3{
@@ -34,4 +34,31 @@
 
 .authorText p{
     font-size: 1rem;
+}
+
+@media only screen and (max-width:1000px){
+    .authorText{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .authorImgDiv{
+        width: 13%;
+    }
+
+    .authorDiv{
+        margin-top: 10vw;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .authorImgDiv{
+        width: 16%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .authorImgDiv{
+        width: 30%;
+    }
 }
