@@ -13,6 +13,11 @@ const Header = () => {
     const path = '/'
     navigate(path);
   }
+
+  const notReady = () =>{
+    alert('This feature is in development');
+  }
+
   return (
     <div className='top'>
         <div className='logo' onClick={goHomePage}>
@@ -25,7 +30,7 @@ const Header = () => {
               <li><NavLink to='writers'>ΕΜΕΙΣ</NavLink></li>
           </ul>
           <div className='userIcon'>
-            <img src={iconProfile} alt='icon profile' />
+            <img src={iconProfile} alt='icon profile' onClick={notReady}/>
           </div>
         </div>
         

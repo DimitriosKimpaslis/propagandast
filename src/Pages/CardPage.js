@@ -1,7 +1,9 @@
-import React, { createElement } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import React, { createElement } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import { data } from '../data';
-import '../styles/CardPage.css'
+import {people} from '../peopleData';
+import '../styles/CardPage.css';
+import Author from '../components/Author';
 
 const CardPage = () => {
     //take the url , save the id part, and then render the object with the corresponding id from the data set
@@ -19,7 +21,7 @@ const CardPage = () => {
     }
 
     // Take a big string that specifies title/text with \n and creates different html elements (paragraphs and subtitles)
-    const paragraphGenerator = (text) => {
+    const paragraphGenerator = (text ,imgArr) => {
         let string = text;
         const tempArr = [];
         let count = 1;
@@ -28,7 +30,18 @@ const CardPage = () => {
             const partText = string.slice(0 , breakIndex); //takes part of the text
             string = string.slice(breakIndex + 1 , string.length) //removes text taken out
             let temp
+            let div
             //create the corresponding element and put in an array
+            if(count === 4 && imgArr[0]){
+                temp = createElement('img',{className: 'dynamicImg', src:require('../content/dynamic/'+ imgArr[0])})
+                div = createElement('div',{className: 'dynamicDivImg'}, temp)
+                tempArr.push(div)
+            }
+            if(count === 6 && imgArr[1]){
+                temp = createElement('img',{className: 'dynamicImg', src:require('../content/dynamic/'+ imgArr[1])})
+                div = createElement('div',{className: 'dynamicDivImg'}, temp)
+                tempArr.push(div)
+            }
             if(count === 1){
                 temp = createElement('p',{className: 'paragraph firstParagraph'},partText)
                 tempArr.push(temp)
@@ -50,6 +63,9 @@ const CardPage = () => {
          return tempArr
     }
     
+    //find and return the author object from people so that it gets passed to Author.js
+    const authorObj = people.find(person => cardData.writer === (person.name + ' ' + person.surname))
+
   return (
     <div className='CardPage' onLoad={cdIn}>
         <h1>{cardData.title}: "{cardData.reviewTitle}"</h1>
@@ -60,11 +76,9 @@ const CardPage = () => {
             <h5>{cardData.time}</h5>
             <h4><Link to='/writers'>{cardData.writer}</Link></h4>
             <h3>⭐{cardData.rating}/10</h3>
-            {paragraphGenerator(cardData.text)}
+            {paragraphGenerator(cardData.text ,cardData.images)}
         </div>
-        <div className='footer'>
-
-        </div>
+        <Author authorObj={authorObj} />
     </div>
   )
 }

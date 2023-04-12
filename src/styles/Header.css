@@ -15,7 +15,7 @@
 }
 
 .logo{
-    width: 15%;
+    width: 15vw;
     cursor: pointer;
 }
 
@@ -25,8 +25,8 @@
 
 .nav{
     display: flex;
-    justify-content: center;
     align-items: center;
+    width: fit-content;
 }
 
 .nav ul{
@@ -37,20 +37,24 @@
     display: inline;
 }
 
+.userIcon{
+    padding-left: 5vw;
+}
+
+.userIcon img{
+    cursor: pointer;
+}
+
 .nav ul li:nth-child(3){
-    margin-left: 20px;
+    padding-left: 1vw;
 }
 
 .nav ul li:nth-child(2){
-    margin-left: 20px;
+    padding-left: 1vw;
 }
 
 .nav ul li:nth-child(1){
-    margin-left: 20px;
-}
-
-.userIcon{
-    margin-left: 60px
+    padding-left: 1vw;
 }
 
 

@@ -22,8 +22,8 @@ body{
 }
 
 .margin{
-    padding-top: 5%;
-    padding-bottom: 3%;
+    padding-top: 15vh;
+    padding-bottom: 8vh;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -31,4 +31,10 @@ body{
 /* Change highlight color */
 ::selection {
     background: brown;
+  }
+
+  @media only screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
   }
