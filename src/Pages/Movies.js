@@ -17,6 +17,8 @@ const Movies = () => {
   const [posts , setPosts] = useState([]);
   const [searchResults , setSearchResults] = useState([]);
 
+  const type = 'movie';
+
   useEffect(() =>{
     setPosts(movies);
     setSearchResults(tempArray);
@@ -27,7 +29,7 @@ const Movies = () => {
     <div className='moviesDiv'>
       <h1 id='moviesH1'>ΤΑΙΝΙΕΣ</h1>
       <div className='flexSearchFilter'>
-        <SearchBar posts={posts} setSearchResults={setSearchResults} />
+        <SearchBar posts={posts} setSearchResults={setSearchResults} type={type} />
         <Filter posts={posts} setSearchResults={setSearchResults} />
       </div>
       <Cards cardsData={searchResults} />

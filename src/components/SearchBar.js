@@ -1,9 +1,16 @@
 import React from 'react'
 import '../styles/Search.css'
 
-const SearchBar = ({posts , setSearchResults}) => {
+const SearchBar = ({posts , setSearchResults , type}) => {
     const handleSubmit = (e) => e.preventDefault();
     let resultsArray = [];
+
+    let placeholder = ''
+    if (type === 'movie'){
+        placeholder = 'ταινίας'
+    }else if(type === 'serie'){
+        placeholder = 'σειράς'
+    };
     
     const handleSearchChange = (e) => {
         if (!e.target.value) return setSearchResults(posts);
@@ -21,7 +28,7 @@ const SearchBar = ({posts , setSearchResults}) => {
             type='text'
             id='search'
             onChange={handleSearchChange}
-            placeholder='Αναζήτηση ταινίας...' />
+            placeholder={'Αναζήτηση ' + placeholder + '...'} />
         </div>
   )
 }

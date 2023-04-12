@@ -17,6 +17,8 @@ const Series = () => {
   const [posts , setPosts] = useState([]);
   const [searchResults , setSearchResults] = useState([]);
 
+  const type = 'serie';
+
   //set first state
   useEffect(() =>{
     setPosts(series);
@@ -28,7 +30,7 @@ const Series = () => {
     <div className='moviesDiv'>
       <h1 id='moviesH1'>ΣΕΙΡΕΣ</h1>
       <div className='flexSearchFilter'>
-        <SearchBar posts={posts} setSearchResults={setSearchResults} />
+        <SearchBar posts={posts} setSearchResults={setSearchResults} type={type} />
         <Filter posts={posts} setSearchResults={setSearchResults} />
       </div>
       <Cards cardsData={searchResults} />
