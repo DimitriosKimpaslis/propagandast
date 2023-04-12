@@ -6,7 +6,7 @@ const LoadingHome = ({loadingHome}) => {
     const loading = document.getElementsByClassName('loadingDiv')[0];
     loading.style.display = 'none';
     const loadingImg = document.getElementById('loadingImg');
-    loadingImg.style.animationIterationCount = '2';
+    loadingImg.style.animationIterationCount = '5';
   }
   return (
     <div className='loadingDiv'>
