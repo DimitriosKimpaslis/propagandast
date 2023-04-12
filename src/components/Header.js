@@ -18,6 +18,21 @@ const Header = () => {
     alert('This feature is in development');
   }
 
+
+  const dropdownHandler = (e) => {
+    const mobileUlDiv = document.getElementById('mobileUlDiv');
+    const mobileUl = document.getElementById('mobileUl');
+    mobileUlDiv.style.display = 'block';
+    mobileUl.style.display = 'block';
+  }
+
+  const closeDropdown = () =>{
+    const mobileUlDiv = document.getElementById('mobileUlDiv');
+    const mobileUl = document.getElementById('mobileUl');
+    mobileUlDiv.style.display = 'none';
+    mobileUl.style.display = 'none';
+  }
+
   return (
     <div className='top'>
         <div className='logo' onClick={goHomePage}>
@@ -29,6 +44,23 @@ const Header = () => {
               <li><NavLink to='series'>ΣΕΙΡΕΣ</NavLink></li>
               <li><NavLink to='writers'>ΕΜΕΙΣ</NavLink></li>
           </ul>
+          
+          <div className='dropdown'>
+            <p className='signIn' onClick={notReady}>Sign in</p>
+            <div className='dropdownImg'>
+              <img src={require('../content/logos/dropdown.png')} onClick={dropdownHandler} />
+            </div>
+            <div id='mobileUlDiv'>
+              <div id='closeDropdown'>
+                <img src={require('../content/logos/close.png')} onClick={closeDropdown} />
+              </div>
+              <ul id='mobileUl'>
+                <li><NavLink to='movies' onClick={closeDropdown}>ΤΑΙΝΙΕΣ</NavLink></li>
+                <li><NavLink to='series' onClick={closeDropdown}>ΣΕΙΡΕΣ</NavLink></li>
+                <li><NavLink to='writers' onClick={closeDropdown}>ΕΜΕΙΣ</NavLink></li>
+              </ul>
+            </div>
+          </div>
           <div className='userIcon'>
             <img src={iconProfile} alt='icon profile' onClick={notReady}/>
           </div>

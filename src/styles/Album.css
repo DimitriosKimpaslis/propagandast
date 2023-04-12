@@ -10,8 +10,27 @@
     background-size: contain;
 }
 
-    @media only screen and (max-width: 1440px) {
+    @media only screen and (max-width: 1670px) {
         .albumDiv{
             background-repeat: no-repeat;
+            margin-top: 1vh;
+        }
+    }
+
+    @media only screen and (max-width: 1500px) {
+        .albumDiv{
+            height: 35vh;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .albumDiv{
+            height: 25vh;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .albumDiv{
+            height: 18vh;
         }
     }

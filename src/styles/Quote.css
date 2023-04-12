@@ -25,3 +25,9 @@
     color: brown;
     font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 1200px) {
+    .quoteDiv{
+        margin-top: 1vh;
+    }
+}

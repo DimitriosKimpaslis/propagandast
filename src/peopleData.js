@@ -46,10 +46,10 @@ export const people = [
         instagram: 'https://www.instagram.com/gkouuuu/',
         image: 'gkou.jpg',
         alt: 'theodoros gkoutziouridis',
-        smallText:'Ο Θεόδωρος Γκουτζιουρίδης είναι κριτικός ταίνιων στην Propagandast. Έχει πάθος τις ταινίες σούπερ ηρώων και γενικότερα δράσης.',
+        smallText:'Ο Θεόδωρος Γκουτζιουρίδης είναι κριτικός ταίνιων στην Propagandast. Έχει πάθος στις ταινίες σούπερ ηρώων και γενικότερα δράσης.',
         id: 3
     },
-    {
+    { 
         name:'Axilleas',
         surname: 'Ntinas',
         title: 'MORAL ADVISOR',
