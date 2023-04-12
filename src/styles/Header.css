@@ -170,12 +170,18 @@
         width: 65vw;
     }
 
+    .top{
+        padding: 0 1%;
+        height: 70px;
+    }
+    
+
     .dropdownImg{
         width: 20%;
     }
 
     .signIn{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 

@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/Home.css';
 import Album from '../components/Album';
 import Quote from '../components/Quote';
+import MobileAlbum from '../components/MobileAlbum';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
         <h1>ΤEΛΕΥΤΑΙΕΣ ΚΡΙΤIΚΕΣ</h1>
       </div>
       <Album />
+      <MobileAlbum />
       <Quote />
       <div className='footer'></div>
     </div>

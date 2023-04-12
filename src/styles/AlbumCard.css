@@ -27,3 +27,13 @@
     font-size: 1.1rem;
     
 }
+
+@media only screen and (max-width:1000px){
+    .albumCardImg{
+        width: 100%;
+    }
+
+    .albumCardImg img{
+        width: 100%;
+    }
+}

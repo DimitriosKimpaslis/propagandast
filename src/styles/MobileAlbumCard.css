@@ -1,0 +1,47 @@
+
+.AlbumMobileCardDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC93C;
+    border: 5px solid black;
+}
+
+
+.albumCardMobileImageDiv{
+    width: 100%;
+}
+
+.albumCardMobileImageDiv img{
+    width: 100%;
+}
+
+.albumCardMobileInfo{
+    background-color: rgb(20, 20, 20);
+    padding-top: 2%;
+    width: 100%;
+    height: 100%;
+}
+
+.albumCardMobileInfo h5{
+    color: grey;
+}
+
+.albumCardMobileInfo h4{
+    color: white;
+}
+
+.ratingMobile{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    position: relative;
+    bottom: 0;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.albumCardMobileInfo h1{
+   color: white;
+}

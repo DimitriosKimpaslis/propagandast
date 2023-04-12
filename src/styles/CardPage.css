@@ -93,4 +93,8 @@
     .CardPage{
         padding: 0 10% 1% 10%;
     }
+
+    .dynamicImg{
+        width: 100%;
+    }
   }

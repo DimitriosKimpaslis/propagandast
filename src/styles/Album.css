@@ -25,12 +25,6 @@
 
     @media only screen and (max-width: 1000px) {
         .albumDiv{
-            height: 25vh;
-        }
-    }
-
-    @media only screen and (max-width: 600px) {
-        .albumDiv{
-            height: 18vh;
+            display: none;
         }
     }
