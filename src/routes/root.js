@@ -4,10 +4,10 @@ import '../styles/root.css'
 import LoadingHome from "../components/LoadingHome";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
+import Sidebar from "../components/Sidebar";
 
 export default function Root() {
   const [loadingHome , setLoadingHome] = useState(true);
-  const [loading , setLoading] = useState(false);
 
   //when the first render completes make the loadingHome component dissapear
     useEffect(() => {
@@ -29,6 +29,7 @@ export default function Root() {
           <Header />
           <div className="margin">
             <Outlet />
+            <Sidebar />
           </div>
           
         </div>

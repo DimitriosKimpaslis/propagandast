@@ -1,0 +1,21 @@
+.sidebar{
+    width: 100%;
+    background-color: white;
+    padding: 10% 5% 10% 5%;
+}
+
+.sidebarSearch h3{
+    background-color: #FFC93C;
+    padding: 2%;
+    width: fit-content;
+    margin-bottom: 5px;
+}
+
+.sidebarSearch input{
+    width: 100%;
+    height: 30px;
+}
+
+.fb{
+    width: 100%;
+}

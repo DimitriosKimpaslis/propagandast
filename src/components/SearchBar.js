@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/Search.css'
 
-const SearchBar = ({posts , setSearchResults , type}) => {
+const SearchBar = ({posts , setSearchResults , type, MainOrSide}) => {
     const handleSubmit = (e) => e.preventDefault();
     let resultsArray = [];
 
@@ -14,12 +14,17 @@ const SearchBar = ({posts , setSearchResults , type}) => {
     
     const handleSearchChange = (e) => {
         if (!e.target.value) return setSearchResults(posts);
-
         resultsArray = posts.filter(post => post.title.toLowerCase().includes(e.target.value.toLowerCase()) ||  post.reviewTitle.toLowerCase().includes(e.target.value.toLowerCase()))
-        
-
         setSearchResults(resultsArray);
     }
+
+    useEffect(()=>{
+        if(MainOrSide === 'side'){
+            const searchBar = document.getElementById('search')
+            searchBar.style.padding = '100%'
+        }
+    },[])
+    
 
   return (
         <div className='searchDiv' onSubmit={handleSubmit}>

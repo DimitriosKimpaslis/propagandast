@@ -26,7 +26,6 @@
 
 .cardImg{
     width: 100%;
-    
     height: auto;
     display: flex;
     justify-content: center;
@@ -49,12 +48,13 @@
 .cardInfo{
     background-color: #c8c5c9;
     border-radius: 12px;
-    height: 12vh;
     position: relative;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     transition: transform ease .5s, box-shadow ease .5s;
-    margin-bottom: 20px;
     padding: 2% 2% 0 2%;
+    margin-bottom: 2vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .cardInfo:hover{
@@ -63,26 +63,36 @@
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
+.textInfo{
+  height: 50px;
+}
+
 
 
 .cardInfo h5{
   font-style: italic;
-  font-size: 0.8vw;
+  font-size: 0.8rem;
   color: rgb(29, 28, 28);
 }
 
 .cardInfo h4{
-  font-size: 1.1vw;
+  font-size: 1.1rem;
+}
+
+.cardInfo h1{
+  /* margin-right: 10px;
+  bottom: 0;
+  right: 0;
+  position: absolute; */
+  font-size: 1.7rem;
 }
 
 .rating{
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-right: 2%;
+  align-items: flex-end;
+  margin-right: 1%;
+  height: 100%;
 }
 
 .starIcon{
@@ -97,34 +107,23 @@
 }
 
 
-.cardInfo h1{
-    /* margin-right: 10px;
-    bottom: 0;
-    right: 0;
-    position: absolute; */
-    font-size: 1.7vw;
-}
-
-@media only screen and (max-width: 2560px) and (min-width:2000px) {
-  .cardInfo{
-    height: 15vh;
+@media only screen and (max-width: 1400px) {
+  .textInfo{
+    height: 60px;
   }
 }
 
-@media only screen and (max-width: 1500px) and (min-width:1000px) {
-  .cardInfo{
-    height: 8.5vh;
+@media only screen and (max-width: 1050px){
+  .textInfo{
+    height: 70px;
   }
 }
 
 @media only screen and (max-width: 1000px) and (min-width:700px) {
-  .cardInfo{
-    height: 6vh;
-  }
+  
 }
 
 @media only screen and (max-width: 700px) and (min-width:300px) {
-  .cardInfo{
-    height: 4vh;
-  }
+  
 }
+

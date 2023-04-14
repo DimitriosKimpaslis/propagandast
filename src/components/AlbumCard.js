@@ -20,7 +20,6 @@ const AlbumCard = (props) => {
         const image = document.getElementById(card.id);
         const info = document.getElementById(card.title);
         image.style.width = '300px';
-        image.style.marginLeft = '30px'
         image.style.zIndex = '90';
         info.style.display = 'block';
     }
@@ -30,7 +29,6 @@ const AlbumCard = (props) => {
         const info = document.getElementById(card.title);
         image.style.zIndex = index + 1;
         image.style.width = '200px';
-        image.style.marginLeft = '0px';
         info.style.display = 'none';
     }
     

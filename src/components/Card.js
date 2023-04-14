@@ -54,8 +54,10 @@ const Card = (props) => {
             <img src={require('../content/images/'+ card.image)} onLoad={hideLoader} alt={card.alt} />
         </div>
         <div className='cardInfo' onClick={routeChange} >
-            <h5 >{card.time}</h5>
-            <h4>{card.title}: "{card.reviewTitle}"</h4>
+            <div className='textInfo'>
+                <h5 >{card.time}</h5>
+                <h4>{card.title}: "{card.reviewTitle}"</h4>
+            </div>
             {/* I've put card.title because card.id was taken by cd. It doesnt matter what it is , it just has to be another unique value for every card so that getElementById doesnt throw an error. I could put any kind of data and it would work. I use it so that the review color change can work */}
             <div className='rating'>
                 <div className='starIcon'>
