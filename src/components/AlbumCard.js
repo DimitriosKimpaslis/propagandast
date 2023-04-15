@@ -9,12 +9,7 @@ const AlbumCard = (props) => {
 
     const navigate = useNavigate();
 
-    let path = '';
-    if(card.type === 'movie'){
-        path = '/movies/' + card.id.toString();
-    }else if (card.type === 'series'){
-        path = '/series/' + card.id.toString();
-    }
+    let path = '/reviews/' + card.id.toString();
 
     const hoverImage = () => {
         const image = document.getElementById(card.id);

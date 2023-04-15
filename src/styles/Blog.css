@@ -1,0 +1,37 @@
+.blog{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.blogCard{
+    background-color: white;
+    padding: 3%;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.blogCardImage{
+    width: 100%;
+}
+
+.blogCardImage img{
+    width: 100%;
+}
+
+.BlogCardText p{
+    color: rgb(65, 65, 65);
+}
+
+.BlogCardText h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+    overflow-wrap: break-word;
+}
+
+.BlogCardText h5{
+    font-style: italic;
+}

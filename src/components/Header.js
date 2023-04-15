@@ -40,8 +40,8 @@ const Header = () => {
         </div>
         <div className='nav'>
           <ul>
-              <li><NavLink to='movies'>ΤΑΙΝΙΕΣ</NavLink></li>
-              <li><NavLink to='series'>ΣΕΙΡΕΣ</NavLink></li>
+              <li><NavLink to='reviews'>ΚΡΙΤΙΚΕΣ</NavLink></li>
+              <li><NavLink to='blog'>BLOG</NavLink></li>
               <li><NavLink to='writers'>ΕΜΕΙΣ</NavLink></li>
           </ul>
           
@@ -55,8 +55,8 @@ const Header = () => {
                 <img src={require('../content/logos/close.png')} onClick={closeDropdown} />
               </div>
               <ul id='mobileUl'>
-                <li><NavLink to='movies' onClick={closeDropdown}>ΤΑΙΝΙΕΣ</NavLink></li>
-                <li><NavLink to='series' onClick={closeDropdown}>ΣΕΙΡΕΣ</NavLink></li>
+                <li><NavLink to='reviews' onClick={closeDropdown}>ΚΡΙΤΙΚΕΣ</NavLink></li>
+                <li><NavLink to='blog' onClick={closeDropdown}>BLOG</NavLink></li>
                 <li><NavLink to='writers' onClick={closeDropdown}>ΕΜΕΙΣ</NavLink></li>
               </ul>
             </div>

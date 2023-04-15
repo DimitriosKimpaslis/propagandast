@@ -33,19 +33,13 @@ const Card = (props) => {
         imageLoader.style.display = 'none';
     }
             
-    let path = '';
-    if(card.type === 'movie'){
-        path = '/movies/' + card.id.toString();
-    }else if (card.type === 'series'){
-        path = '/series/' + card.id.toString();
-    }
-
+    let path = '/reviews/' + card.id.toString();
     const routeChange = () =>{ 
         setDisabled(true)
         const cd = document.getElementById('cardImageDiv' + card.id);
         cd.style.animation = 'slidein 2s';
         setTimeout(() =>{navigate(path)}, 500);
-  }
+    }
   
   return (
     <div className='card'>

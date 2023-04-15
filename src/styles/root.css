@@ -24,7 +24,8 @@ body{
 
 .margin{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    column-gap: 1%;
+    grid-template-columns: 4fr 1fr;
     padding-top: 15vh;
     padding-bottom: 8vh;
     margin-left: 5%;

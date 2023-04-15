@@ -10,9 +10,8 @@ import '../styles/Movies.css'
 
 const Movies = () => {
   //find movies from data
-  const movies = data.filter(review => review.type === 'movie');
   //do the first render sort so that it shows the latest movies
-  const tempArray = movies.sort((post1, post2) => Number(post2.timeFilter) - Number(post1.timeFilter));
+  const tempArray = data.sort((post1, post2) => Number(post2.timeFilter) - Number(post1.timeFilter));
 
   const [posts , setPosts] = useState([]);
   const [searchResults , setSearchResults] = useState([]);
@@ -20,14 +19,14 @@ const Movies = () => {
   const type = 'movie';
 
   useEffect(() =>{
-    setPosts(movies);
+    setPosts(data);
     setSearchResults(tempArray);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   },[]);
 
   return (
     <div className='moviesDiv'>
-      <h1 id='moviesH1'>ΤΑΙΝΙΕΣ</h1>
+      <h1 id='moviesH1'>ΚΡΙΤΙΚΕΣ</h1>
       <div className='flexSearchFilter'>
         <SearchBar posts={posts} setSearchResults={setSearchResults} type={type} />
         <Filter posts={posts} setSearchResults={setSearchResults} />

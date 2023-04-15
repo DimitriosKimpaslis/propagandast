@@ -8,7 +8,6 @@ import Author from '../components/Author';
 const CardPage = () => {
     //take the url , save the id part, and then render the object with the corresponding id from the data set
     const paramsObj = useParams();
-    console.log(paramsObj)
     const id = paramsObj.id;
     const cardData = data.find(card => {
         return card.id === Number(id)

@@ -1,0 +1,36 @@
+.blogPage{
+    width: 100%;
+    background-color: white;
+    padding: 1% 2% 1% 2%;
+}
+
+.blogPageImg{
+    width: 100%;
+    background-color: black;
+    margin-bottom: 2%;
+}
+
+.blogPageImg img{
+    width: 100%;
+}
+
+.blogContent{
+    background-color: rgb(179, 177, 177);
+    padding: 0.5% 1%;
+    margin: 2% 0;
+}
+
+.blogPage h1{
+    font-size: 3rem;
+}
+
+.blogContent h4{
+    font-size: 1.2rem;
+}
+
+
+.blogParagraph{
+    font-size: 1.6rem;
+    padding: 1% 0;
+    line-height: calc(1ex / 0.32);
+}
