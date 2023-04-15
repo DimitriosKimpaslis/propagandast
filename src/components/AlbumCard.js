@@ -14,7 +14,7 @@ const AlbumCard = (props) => {
     const hoverImage = () => {
         const image = document.getElementById(card.id);
         const info = document.getElementById(card.title);
-        image.style.width = '300px';
+        image.style.width = '100%';
         image.style.zIndex = '90';
         info.style.display = 'block';
     }
@@ -23,7 +23,7 @@ const AlbumCard = (props) => {
         const image = document.getElementById(card.id);
         const info = document.getElementById(card.title);
         image.style.zIndex = index + 1;
-        image.style.width = '200px';
+        image.style.width = '90%';
         info.style.display = 'none';
     }
     
@@ -41,7 +41,7 @@ const AlbumCard = (props) => {
         <div className='albumCardImg'  onMouseOver={hoverImage} onMouseOut={stopHovering} id={card.id} onClick={routeChange} >
             <img src={require('../content/images/'+ card.image)} alt={card.alt} />
         </div>
-        <div className='albumCardInfo' id={card.title}>
+        <div className='albumCardInfo' onMouseOver={hoverImage} onMouseOut={stopHovering} id={card.title}>
             <h5 >{card.time}</h5>
             <h4>{card.title}: "{card.reviewTitle}"</h4>
             {/* I've put card.title because card.id was taken by cd. It doesnt matter what it is , it just has to be another unique value for every card so that getElementById doesnt throw an error. I could put any kind of data and it would work. I use it so that the review color change can work */}
