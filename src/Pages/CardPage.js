@@ -4,7 +4,6 @@ import { data } from '../data';
 import {people} from '../peopleData';
 import '../styles/CardPage.css';
 import Author from '../components/Author';
-import { key } from 'localforage';
 
 const CardPage = () => {
     //take the url , save the id part, and then render the object with the corresponding id from the data set
