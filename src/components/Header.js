@@ -20,10 +20,15 @@ const Header = () => {
 
 
   const dropdownHandler = (e) => {
+    const style = {
+      display: 'block',
+      animation: 'navigation 5s'
+    }
     const mobileUlDiv = document.getElementById('mobileUlDiv');
     const mobileUl = document.getElementById('mobileUl');
     mobileUlDiv.style.display = 'block';
     mobileUl.style.display = 'block';
+    mobileUlDiv.style.animation = style;
   }
 
   const closeDropdown = () =>{

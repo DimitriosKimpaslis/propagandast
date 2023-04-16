@@ -1,8 +1,7 @@
 .albumMobileDiv{
     display: none;
     grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 20px;
+    gap: 2vw;
     margin-top: 5vh;
 }
 

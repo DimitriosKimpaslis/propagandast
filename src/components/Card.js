@@ -7,8 +7,8 @@ const Card = (props) => {
     const setDisabled = props.setDisabled;
     const navigate = useNavigate();
     
-    const ratingColor = () => {
-        const ratingH1 = document.getElementById(card.title);
+    const ratingColor = (document) => {
+        const ratingH1 = document;
         if(Number(card.rating) >= 0 && Number(card.rating) < 5){
             ratingH1.style.color = '#F44949';
         }
@@ -24,7 +24,8 @@ const Card = (props) => {
     };
 
     useEffect(() => {
-        ratingColor()
+        ratingColor(document.getElementById(card.title))
+        ratingColor(document.getElementById('mobileRating' + card.id))
         // eslint-disable-next-line 
     },[])
 
@@ -43,6 +44,7 @@ const Card = (props) => {
   
   return (
     <div className='card'>
+        <div className='mobileRating'><h1 id={'mobileRating'+card.id}>{card.rating}/10</h1></div>
         <div className='cardImg' id={'cardImageDiv' + card.id} >
             <div className='loadingImg' id={'cardImage' + card.id}></div>
             <img src={require('../content/images/'+ card.image)} onLoad={hideLoader} alt={card.alt} />

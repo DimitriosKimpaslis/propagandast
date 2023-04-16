@@ -4,6 +4,7 @@ import { data } from '../data';
 import {people} from '../peopleData';
 import '../styles/CardPage.css';
 import Author from '../components/Author';
+import { key } from 'localforage';
 
 const CardPage = () => {
     //take the url , save the id part, and then render the object with the corresponding id from the data set
@@ -43,22 +44,22 @@ const CardPage = () => {
                 tempArr.push(div)
             }
             if(count === 1){
-                temp = createElement('p',{className: 'paragraph firstParagraph'},partText)
+                temp = createElement('p',{className: 'paragraph firstParagraph', key:1},partText)
                 tempArr.push(temp)
             }
             if(count%2 === 0){
-                temp = createElement('h2',{className: 'subtitle'}, partText)
+                temp = createElement('h2',{className: 'subtitle' ,key:count}, partText)
                 tempArr.push(temp)
             }
             if(count%2 === 1 && count !== 1){
-                temp = createElement('p',{className: 'paragraph'},partText)
+                temp = createElement('p',{className: 'paragraph' , key:count},partText)
                 tempArr.push(temp)
             }
             count = count + 1;
          }
          // if any string is left that obviously hasnt created an element because when an element is created it is deleted from the main string , create one final paragraph(because it always ends with a paragraph)
          if (string){
-            tempArr.push(createElement('p',{className: 'paragraph'},string))
+            tempArr.push(createElement('p',{className: 'paragraph', key:'lastParagraph'},string))
          }
          return tempArr
     }

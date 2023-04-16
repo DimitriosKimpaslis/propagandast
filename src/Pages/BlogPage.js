@@ -39,7 +39,10 @@ const BlogPage = () => {
         <div className='blogPageImg'>
             <img src={require('../content/dynamic/' + blog.image)} />
         </div>
-        {paragraphGenerator(blog.text)}
+        <div className='blogParagraphs'>
+            {paragraphGenerator(blog.text)}
+        </div>
+        
         <Author authorObj={authorObj}/>
     </div>
   )

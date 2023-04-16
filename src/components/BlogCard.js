@@ -14,6 +14,7 @@ const BlogCard = ({blog , index, recent}) => {
 
     const handleClick = (e) =>{
         navigate(path)
+        window.scrollTo(0, 0)
     }
     
   return (

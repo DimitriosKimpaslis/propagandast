@@ -28,9 +28,25 @@
     font-size: 1.2rem;
 }
 
+.blogParagraphs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .blogParagraph{
+    width: 80%;
     font-size: 1.6rem;
-    padding: 1% 0;
+    padding: 1vh 0;
     line-height: calc(1ex / 0.32);
+}
+
+@media only screen and (max-width: 768px) {
+    .blogParagraph{
+        width: 100%;
+        padding: 1vh 2vw;
+        font-size: 1.2rem;
+    }
 }

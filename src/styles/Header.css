@@ -1,3 +1,13 @@
+@keyframes navigation {
+    from {
+      transform: translateX(-2000px);
+    }
+  
+    to {
+      transform: translateX(0px);
+    }
+  }
+
 .top{
     top: 0;
     width: 100%;
@@ -101,15 +111,13 @@
 #mobileUlDiv{
     display: none;
     position: absolute;
-    background-color: #4d4d49;
+    background-color: #ffffff;
+    opacity: 1;
     width: 200px;
     text-align: center;
     right: 0;
     top: 0;
-}
-
-#mobileUl li{
-    border-bottom: 1px solid black;
+    transition: all ease-in-out;
 }
 
 #mobileUl li a{

@@ -25,11 +25,19 @@
     color: rgb(65, 65, 65);
 }
 
+.BlogCardText p:hover{
+    color: rgb(107, 73, 73);
+}
+
 .BlogCardText h4{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5rem;
     margin-bottom: 2%;
     overflow-wrap: break-word;
+}
+
+.BlogCardText h4:hover{
+    color: rgb(216, 70, 70);
 }
 
 .BlogCardText h5{

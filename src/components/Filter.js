@@ -6,12 +6,10 @@ const Filter = ({posts , setSearchResults}) => {
 
   const select = (e) =>{
     let option = e.target.value;
-    console.log(typeof(option) , option)
     if (!option) return setSearchResults(posts);
 
     if (option === 'oldest'){
       resultsArray = posts.sort((post1, post2) => Number(post1.timeFilter) - Number(post2.timeFilter));
-      console.log(Number(posts[0].timeFilter))
       setSearchResults([...resultsArray]);
     }
 

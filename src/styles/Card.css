@@ -22,6 +22,7 @@
 .card{
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .cardImg{
@@ -106,6 +107,14 @@
   width: 80%;
 }
 
+.mobileRating{
+  display: none;
+  position: absolute;
+  z-index: 10;
+  background-color: rgb(19, 19, 19);
+  padding:3%;
+  border-radius: 5%;
+}
 
 @media only screen and (max-width: 1400px) {
   .textInfo{
@@ -113,17 +122,28 @@
   }
 }
 
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 768px){
+    .rating{
+      display: none;
+    }
+
+    .mobileRating{
+      display: block;
+    }
+
+    .textInfo{
+      height: 30px;
+    }
+
+    .cardInfo{
+      background-color: #ffffff;
+      opacity: 0.8;
+
+    }
+}
+
+@media only screen and (max-width: 620px) {
   .textInfo{
-    height: 70px;
+    height: 40px;
   }
 }
-
-@media only screen and (max-width: 1000px) and (min-width:700px) {
-  
-}
-
-@media only screen and (max-width: 700px) and (min-width:300px) {
-  
-}
-

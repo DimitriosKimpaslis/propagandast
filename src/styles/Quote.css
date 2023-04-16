@@ -27,17 +27,17 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .quoteDiv{
-        margin-top: 1vh;
-    }
-
     .quoteDiv p{
         text-align: center;
     }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 1000px) {
     .quoteDiv h1{
         margin-bottom: 20px;
     }
+    .quoteDiv{
+        margin-top: 5vh;
+    }
+
 }

@@ -4,8 +4,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFC93C;
-    border: 5px solid black;
+    background-color: black;
+    border: 8px solid black;
+}
+
+.secondLayer{
+    border: 5px solid rgb(53, 51, 48);
+    width: 100%;
 }
 
 
@@ -19,9 +24,10 @@
 
 .albumCardMobileInfo{
     background-color: rgb(20, 20, 20);
-    padding-top: 2%;
+    padding: 2%;
     width: 100%;
-    height: 100%;
+    height: fit-content;
+    position: relative;
 }
 
 .albumCardMobileInfo h5{
@@ -36,12 +42,26 @@
     display: flex;
     width: 100%;
     height: max-content;
-    position: relative;
+    position: absolute;
     bottom: 0;
     justify-content: flex-end;
     align-items: flex-start;
+    right:  5px;
 }
 
 .albumCardMobileInfo h1{
    color: white;
+   font-size: 1.5rem;
+}
+
+@media only screen and (max-width:1000px) {
+    .albumCardMobileInfo{
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .albumCardMobileInfo{
+        height: 110px;
+    }
 }

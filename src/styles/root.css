@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    
+    overflow-wrap: break-word;
 }
 
 html{
@@ -45,6 +45,7 @@ body{
     .margin{
         margin-left: 3%;
         margin-right: 3%;
+        grid-template-columns: 1fr;
     }
   }
 
@@ -56,5 +57,12 @@ body{
     .margin{
         margin-left: 2%;
         margin-right: 2%;
+    }
+  }
+
+  
+  @media only screen and (max-width: 370px) {
+    html {
+        font-size: 11px;
     }
   }

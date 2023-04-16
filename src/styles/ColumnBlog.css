@@ -1,0 +1,10 @@
+.recentBlogs{
+    display: grid;
+}
+
+@media only screen and (max-width: 768px) {
+    .recentBlogs{
+        grid-template-columns: 1fr 1fr;
+        gap: 1%;
+    }
+}
