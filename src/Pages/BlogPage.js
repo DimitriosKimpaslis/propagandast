@@ -1,11 +1,14 @@
 import React, { createElement } from 'react'
 import { blogData } from '../blogData';
-import { useParams } from 'react-router-dom';
+import { useOutletContext, useParams } from 'react-router-dom';
 import '../styles/BlogPage.css'
 import Author from '../components/Author';
 import { people } from '../peopleData';
+import { getCurrentUrl } from "swup";
 
 const BlogPage = () => {
+    const setUrl = useOutletContext();
+    setUrl(getCurrentUrl())
     const paramsObj = useParams();
     const id = paramsObj.id;
     const blog = blogData.find(blog => {

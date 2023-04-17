@@ -5,10 +5,13 @@ import { useState } from 'react';
 import SearchBar from '../components/SearchBar';
 import Filter from '../components/Filter';
 import '../styles/Movies.css'
-
+import { useOutletContext } from 'react-router-dom';
+import { getCurrentUrl } from "swup";
 
 
 const Movies = () => {
+  const setUrl = useOutletContext();
+  setUrl(getCurrentUrl())
   //find movies from data
   //do the first render sort so that it shows the latest movies
   const tempArray = data.sort((post1, post2) => Number(post2.timeFilter) - Number(post1.timeFilter));

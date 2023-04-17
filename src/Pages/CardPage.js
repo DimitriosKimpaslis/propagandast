@@ -1,13 +1,16 @@
 import React, { createElement } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useOutletContext, useParams } from 'react-router-dom';
 import { data } from '../data';
 import {people} from '../peopleData';
 import '../styles/CardPage.css';
 import Author from '../components/Author';
+import { getCurrentUrl } from "swup";
 
 const CardPage = () => {
-    //take the url , save the id part, and then render the object with the corresponding id from the data set
+    const setUrl = useOutletContext();
+    setUrl(getCurrentUrl())
     const paramsObj = useParams();
+    //take the url , save the id part, and then render the object with the corresponding id from the data set
     const id = paramsObj.id;
     const cardData = data.find(card => {
         return card.id === Number(id)
