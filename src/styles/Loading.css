@@ -26,6 +26,12 @@
 .loadingDiv img{
     width: 5%;
     animation-iteration-count: infinite;
-    animation: rotate 2s;
+    animation: rotate 4s;
+}
+
+@media only screen and (max-width:768px) {
+  .loadingDiv img{
+    width: 15%;
+  }
 }
 
