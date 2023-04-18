@@ -11,6 +11,7 @@ const Header = () => {
   //Logo on click goes to home page
   const goHomePage = () => {
     const path = '/'
+    window.scrollTo(0, 0)
     navigate(path);
   }
 
@@ -45,9 +46,9 @@ const Header = () => {
         </div>
         <div className='nav'>
           <ul>
-              <li><NavLink to='reviews'>ΚΡΙΤΙΚΕΣ</NavLink></li>
-              <li><NavLink to='blog'>BLOG</NavLink></li>
-              <li><NavLink to='writers'>ΕΜΕΙΣ</NavLink></li>
+              <li><NavLink to='reviews' onClick={window.scrollTo(0, 0)}>ΚΡΙΤΙΚΕΣ</NavLink></li>
+              <li><NavLink to='blog' onClick={window.scrollTo(0, 0)}>BLOG</NavLink></li>
+              <li><NavLink to='writers' onClick={window.scrollTo(0, 0)}>ΕΜΕΙΣ</NavLink></li>
           </ul>
           
           <div className='dropdown'>

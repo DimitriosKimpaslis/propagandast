@@ -65,6 +65,10 @@ const CardPage = () => {
          }
          return tempArr
     }
+
+    let trailer = () =>{
+        return cardData.trailer
+    } 
     
     //find and return the author object from people so that it gets passed to Author.js
     const authorObj = people.find(person => cardData.writer === (person.name + ' ' + person.surname))
@@ -72,6 +76,7 @@ const CardPage = () => {
   return (
     <div className='CardPage' onLoad={cdIn}>
         <h1>{cardData.title}: "{cardData.reviewTitle}"</h1>
+        <div className='trailer'>{trailer()}</div>
         <div className='CardPageImage' id={cardData.id}>
             <img src={require('../content/images/'+ cardData.image)} alt={cardData.alt} />
         </div>

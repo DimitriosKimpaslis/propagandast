@@ -1,14 +1,13 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 import '../styles/Blog.css'
 import { useNavigate } from 'react-router-dom'
 
 
-const BlogCard = ({blog , index, recent}) => {
+const BlogCard = ({blog , order, recent}) => {
     const first100char = (text) =>{
         const newText = text.slice(0 , 200);
         return newText;
     }
-
     const navigate = useNavigate();
     let path = '/blog/' + blog.id.toString();
 
@@ -18,7 +17,7 @@ const BlogCard = ({blog , index, recent}) => {
     }
     
   return (
-    <div className='blogCard' onClick={handleClick}>
+    <div className={order === 0 ? 'firstBlogCard' : 'blogCard'} onClick={handleClick}>
         <div className='blogCardImage'>
             <img src={require('../content/dynamic/' + blog.image)} />
         </div>

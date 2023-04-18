@@ -40,6 +40,7 @@ const Card = (props) => {
         const cd = document.getElementById('cardImageDiv' + card.id);
         cd.style.animation = 'slidein 2s';
         setTimeout(() =>{navigate(path)}, 500);
+        window.scrollTo(0, 0);
     }
   
   return (

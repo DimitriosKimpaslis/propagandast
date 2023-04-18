@@ -25,7 +25,6 @@ export default function Root() {
 
     useEffect(() =>{
       setUrl(getCurrentUrl());
-      console.log(url)
       const frontPage = document.getElementById('FrontPage');
       if (url === '/'){
         frontPage.style.display = 'block'

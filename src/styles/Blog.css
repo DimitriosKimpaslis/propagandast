@@ -3,6 +3,7 @@
     height: fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: 0;
     gap: 15px;
 }
 
@@ -11,6 +12,14 @@
     padding: 3%;
     cursor: pointer;
     height: fit-content;
+}
+
+.firstBlogCard{
+    background-color: white;
+    padding: 3%;
+    cursor: pointer;
+    height: fit-content;
+    grid-column-start: span 2;
 }
 
 .blogCardImage{

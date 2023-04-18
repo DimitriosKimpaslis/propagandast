@@ -12,7 +12,8 @@ export const data = [
         reviewTitle: 'Μια καλή σειρά',
         writer: 'Αναστάσιος Σωτηριάδης',
         type: 'series',
-        subtype: 'action'
+        subtype: 'action',
+        trailer: <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OW-2VrnRb0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     },
     {
         id:1,
@@ -27,7 +28,8 @@ export const data = [
         reviewTitle: 'Ένα μικρό τεράστιο διαμάντι',
         writer: 'Αναστάσιος Σωτηριάδης',
         type: 'movie',
-        subtype: 'action'
+        subtype: 'action',
+        trailer: <iframe width="500px" height="225px" src="https://www.youtube-nocookie.com/embed/D30r0CwtIKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     },
     {
         id:2,
@@ -41,7 +43,8 @@ export const data = [
         reviewTitle: 'Πως το Mανταλόριαν «σώζει» το Σταρ Γουορς',
         writer: 'Θεόδωρος Γκουτζιουρίδης',
         type: 'series',
-        subtype: 'action'
+        subtype: 'action',
+        trailer: <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aOC8E8z_ifw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     },
     {
         id:3,
@@ -56,7 +59,8 @@ export const data = [
         reviewTitle: 'Μια βιογραφία που όμως δεν γνωρίζαμε',
         writer: 'Αναστάσιος Σωτηριάδης',
         type: 'movie',
-        subtype: 'action'
+        subtype: 'action',
+        trailer: <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wBDLRvjHVOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     },
     {
         id:4,
@@ -71,7 +75,8 @@ export const data = [
         reviewTitle: 'Η εξιλέωση του Netflix',
         writer: 'Αναστάσιος Σωτηριάδης',
         type: 'movie',
-        subtype: 'action'
+        subtype: 'action',
+        trailer: <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sNEb8sIsoak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     },
     {
         id:5,
@@ -85,7 +90,8 @@ export const data = [
         reviewTitle: 'Mια ταινία που θα ευχόμασταν να μην έχουμε δει ποτέ',
         writer: 'Αναστάσιος Σωτηριάδης',
         type: 'movie',
-        subtype: 'action'
+        subtype: 'action',
+        trailer: <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/x6yaSYAk2KU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     }
     
 ];
